@@ -1,0 +1,17 @@
+{
+  "engines": {
+    "node": ">=19.0.0"
+  },
+  "scripts": {
+    "test": "node --loader tsx --test tests/*.spec.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.6",
+    "moment-timezone": "^0.5.44",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@js-temporal/polyfill": "^0.4.4"
+  }
+}
