@@ -1,13 +1,13 @@
 import { Temporal } from "@js-temporal/polyfill";
 import tokenizeString from "./tokenizeString";
 import momentFormatter from "./formatters/moment";
-import dateFnsFormatter from "./formatters/date_fns";
+import dateFnsFormatter from "./formatters/dateFns";
 import { getUserLocale } from "./utils";
 import { FormatOptions, Formatter, Locale, TokenFormat } from "./types";
 
 const formatters: Record<TokenFormat, Formatter> = {
   moment: momentFormatter,
-  date_fns: dateFnsFormatter,
+  'date-fns': dateFnsFormatter,
 };
 
 let defaultLocale: Locale = getUserLocale();

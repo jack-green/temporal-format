@@ -3,7 +3,7 @@ import { Temporal } from "@js-temporal/polyfill";
 export type Locale = string | string[];
 export type TokenHandler = ((date: Temporal.ZonedDateTime, locale?: Locale) => string | number);
 export type TokenHandlers = Record<string, TokenHandler>;
-export type TokenFormat = 'moment' | 'date_fns';
+export type TokenFormat = 'moment' | 'date-fns';
 
 export interface FormatOptions {
   formatter?: TokenFormat;

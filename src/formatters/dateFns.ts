@@ -2,7 +2,7 @@
 import { Formatter } from '../types';
 
 const dateFnsFormatters: Formatter = {
-  format: 'date_fns',
+  format: 'date-fns',
   escapeString: () => undefined,
   tokenHandlers: {},
 };
